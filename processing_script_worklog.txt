@@ -1,0 +1,110 @@
+*******************************************************************************
+*                                   About                                     *
+*******************************************************************************
+
+Project Title:    TBD
+Created by:       Andrew Caietti
+GitHub:           caiettia
+University:       College of William & Mary
+Class:            Data 431 - Spatial Data Discovery
+Website:          TBD
+
+*******************************************************************************
+*                                 Project Log                                 *
+*******************************************************************************
+
+2020-10-15  Created initial project files
+            * Created project process log
+            * Created project folder on the repository
+
+2020-10-16 Explored Data Sources
+	    * Looked into registering for environmental data from ARGOS satellite
+	    * (https://www.argos-system.org/)
+	    * Found California Condor locational data over time
+		- Potentially going to use this...exploring further
+	    * Found shipping traffic data over time (want to visualize shipping traffic)
+		- Each day is 200mb size is then 365*200mb which may be difficult 
+
+2020-10-17 Aquired Data
+	    * Got access to use ARGOS satellite data from NASA
+	    * (https://www.argos-system.org/)
+	    * Found various wildfire data sources covering CA and the greater US
+	    * (https://firms.modaps.eosdis.nasa.gov/download/)
+
+2020-10-24 Re-Explored Data Sources
+	    * Stored wildfire regional data in geojson format
+	    * Searched for more animal-related data
+
+2020-10-28 Identified Data Sources
+	    * Found Movebank.org, a datasource with a multitude of migration data
+	    * (https://www.movebank.org/cms/webapp?gwt_fragment=page=studies,path=study204253)
+		- Identified Swainson's Hawk dataset as dataset for my project
+	    * Downloaded a few of the data sources and experimented with visualizing in Kepler-gl
+		- Experimented with different available data formats to download from the source
+
+2020-10-30 Experimented With Vizualizations
+	    * Worked on visualizing Swainson's Hawk Data in kepler-gl
+	    * (https://kepler.gl/)
+	    * Did some background research on Swainson's Hawk	
+		- Identified their unique migratory pattern and migratory trigger (wind direction)
+		- identified need for new dataset to complement migratory data
+
+2020-11-01 Explored Data Sources
+	    * Searched for a wind-data source in u-v format
+		- Need two seperate arrays to identify a u and v point for wind data
+		- Plan on developing vectors for the wind data to see directional component
+
+2020-11-03 Manipulated Wind Data
+	    * Experimented with different wind data sets to see what dataset works best for my time-period
+		- Identified data set from noaa.gov 
+		- (https://psl.noaa.gov/about/)
+	    * Utilized Panoply to visualize and construct wind vectors from the u v dataset
+
+2020-11-06 Worked on Migratory Data
+	    * Cleaned migratory data in .csv format
+		- developed script to convert data from .csv format into .geojson format
+		- developed script to create LineString shape object from unique birds in dataset
+
+2020-11-07 Worked on Script
+	    * Worked on geojson conversion script as well as fixing LineString object error
+
+2020-11-08 Visualization
+	    * Visualized and stored animation of wind vector data over time from Panoply
+	    * Continued to search for wind-data to see if I could find a more granular dataset
+		- could not find a more granular dataset satisfying my time window
+
+2020-11-10 Re-Scoped Script
+	    * When visualizing my migratory data, I realized the animation did not reflect what I had envisioned
+		- re-scoped what the purpose of my script was
+		- allow a user to see the path a bird flew over time, so the Linstring
+		  builds cumulatively rather than being a single object
+
+2020-11-11 Re-Wrote Script
+	    * To reflect the above scope, I had to rewrite my script
+		- modify the dataframe that outputs to be more encompassing of my original dataset
+
+2020-11-13 Finalized Script
+	    * Finalized script to wiht GeoJSON string generation and developed different versions of 
+		Linestring visualizations
+
+2020-11-14 Finalized Wind-Data Visualization
+	    * Ran my final visualization of wind-vector data in Panoply 
+	    * (https://www.giss.nasa.gov/tools/panoply/)
+		- exported animation for use on website
+
+2020-11-15 Finalized Migration Data Visualization
+	    * Rendered .csv and .geojson migration data in Kepler-gl 
+	    * (https://kepler.gl/)
+		- Tested different forms of visualization
+			-- Decided not to animate Linestrings as more information is conveyed in static
+			   visualization compared to animation
+			-- Decided to animate the Lat,Long points for each bird to see movement
+
+2020-11-18 Wrapped up Readme files
+	    * Added links to files and cleaned up formatting
+
+2020-11-19 Final Checks on Readme and project markdown files
+
+
+
+
