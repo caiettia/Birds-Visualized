@@ -47,13 +47,6 @@ To visualize this data, I took advantage of an open source tool called Kepler-gl
 I was able to simply import my dataset in GeoJSON format to the WebGL component of Kepler-gl.
 There, I was able to use a timestamp filter to create the animation of the bird migration over time.
 
-<!-- VIDEO ON LOOP: see styles.css for formatting -->
-<div class="video-wrapper">
-  <video class="max-width-100" width="437" height="430" controls preload="true" autoplay loop muted>
-    <source src="https://drdavis.space/teaching/ds/sdd/media/2020/11/bird_migration.mp4" type="video/mp4" >
-  </video>
-  <img class="max-width-100" id="caiettiaimg" align="top" width="446" height="430" src="https://drdavis.space/teaching/ds/sdd/media/2020/11/migration_routes_2.png" alt = "Migration Routes">
-</div>
 
 ### Wind Vector Data
 For my wind vector data, the biggest challenge was finding surface wind data that covered the time period of my migration dataset; 1995 - 1998.
@@ -67,13 +60,6 @@ With this, I was able to create vectors in Panoply[^pano] by loading both datase
 So, each day has its own array of Meridional and Zonal datasets, with vectors calculated between both arrays.
 Below, you are able to see the average direction of the wind for each day between 1996-07-01 to 1997-07-07.
 
-
-<!-- VIDEO ON LOOP: see styles.css for formatting -->
-<div class="video-wrapper">
-  <video width =  controls preload="true" autoplay loop muted>
-    <source src="https://drdavis.space/teaching/ds/sdd/media/2020/11/wind_vector_map.mp4" type="video/mp4" >
-  </video>
-</div>
 
 
 <div class="credit-line">
